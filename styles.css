@@ -1,0 +1,80 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.ageCalculatorProfile {
+  height: 100vh;
+}
+
+.ageCalculator {
+  background-color: hsl(0, 0%, 100%);
+  width: 500px;
+  border: transparent;
+  border-radius: 20px;
+  border-bottom-right-radius: 100px;
+}
+
+.myInput {
+  width: 90px;
+  height: 50px;
+  border: solid 2px hsl(0, 0%, 86%);
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.ls {
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+  font-size: 0.5rem;
+}
+
+.num {
+  color: hsl(259, 100%, 65%);
+}
+
+.myButton {
+  background-color: hsl(259, 100%, 65%);
+  border: transparent;
+  border-radius: 50px;
+  width: 100%;
+  color: white;
+}
+
+.myButton:hover {
+  background-color: transparent;
+  border: solid 2px hsl(259, 100%, 65%);
+
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.again {
+  background-color: gold;
+  border: transparent;
+  border-radius: 50px;
+  width: 100%;
+  color: white;
+}
+.again:hover {
+  background-color: transparent;
+  border: solid 2px gold;
+
+  color: black;
+}
+
+/* .check {
+
+} */
+/* .check:hover {
+} */
