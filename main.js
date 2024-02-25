@@ -58,14 +58,16 @@ check.addEventListener("click", function () { //check button event listener
     }
     month2.textContent = month1;
 
-    if (
+   /*  if (
       day === Number(document.querySelector(".day").value) &&
       month === Number(document.querySelector(".month").value)
     ) {
       day2.textContent = day - document.querySelector(".day").value;
     } else {
       day2.textContent = day;
-    }
+    } */
+
+    day2.textContent = day - document.querySelector(".day").value;
 
     hide(check);
     unHide(again);
