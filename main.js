@@ -20,7 +20,7 @@ function unHide(yourClass) {
   yourClass.classList.remove("hide");
 }
 
-check.addEventListener("click", function () {
+check.addEventListener("click", function () { //check button event listener
   if (
     document.querySelector(".day").value === "" ||
     document.querySelector(".month").value === "" ||
@@ -72,7 +72,7 @@ check.addEventListener("click", function () {
   }
 });
 
-again.addEventListener("click", function () {
+again.addEventListener("click", function () { //again button
   document.querySelector(".day").value = "";
   document.querySelector(".month").value = "";
   document.querySelector(".year").value = "";
