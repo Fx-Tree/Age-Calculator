@@ -20,7 +20,7 @@ function unHide(yourClass) {
   yourClass.classList.remove("hide");
 }
 
-check.addEventListener("click", function () { //check button event listener
+check.addEventListener("click", function () {
   if (
     document.querySelector(".day").value === "" ||
     document.querySelector(".month").value === "" ||
@@ -41,8 +41,8 @@ check.addEventListener("click", function () { //check button event listener
     if (document.querySelector(".month").value > month) {
       ageY = ageY - 1;
     } else if (
-      document.querySelector(".month").value === month &&
-      document.querySelector(".day") > day
+      document.querySelector(".month").value == month &&
+      Number(document.querySelector(".day").value) > day
     ) {
       ageY = ageY - 1;
     }
@@ -58,23 +58,27 @@ check.addEventListener("click", function () { //check button event listener
     }
     month2.textContent = month1;
 
-   /*  if (
+    /*     if (
       day === Number(document.querySelector(".day").value) &&
       month === Number(document.querySelector(".month").value)
     ) {
       day2.textContent = day - document.querySelector(".day").value;
     } else {
       day2.textContent = day;
-    } */
-
-    day2.textContent = day - document.querySelector(".day").value;
+    }
+ */
+    if (day > document.querySelector(".day").value) {
+      day2.textContent = day - document.querySelector(".day").value;
+    } else {
+      day2.textContent = document.querySelector(".day").value - day;
+    }
 
     hide(check);
     unHide(again);
   }
 });
 
-again.addEventListener("click", function () { //again button
+again.addEventListener("click", function () {
   document.querySelector(".day").value = "";
   document.querySelector(".month").value = "";
   document.querySelector(".year").value = "";
@@ -90,3 +94,4 @@ again.addEventListener("click", function () { //again button
   unHide(check);
   hide(again);
 });
+
